@@ -6,6 +6,7 @@
     <% @students.each do |student|  %>
       <%= student.name %>
       <%= student.avatar %>
+      <%= image_tag(student.avatar, alt: student.name) %>
        <h2><%= link_to student.name, students_index_path(student) %></h2>
     <% end %>
   </div>
