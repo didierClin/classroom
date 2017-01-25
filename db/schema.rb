@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 20170125085354) do
 
   create_table "students", force: :cascade do |t|
+    t.string "name"
   end
 
 end
