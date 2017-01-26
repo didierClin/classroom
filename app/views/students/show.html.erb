@@ -1,2 +1,4 @@
 <h1>Profile for @student.name</h1>
-<p> <%= image_tag(student.avatar, alt: student.name, size: 120)  %></p>
+<p> <%= image_tag(@student.avatar, alt: @student.name, size: 120)  %></p>
+
+<a href=<%= root_path %> >Back</a>
