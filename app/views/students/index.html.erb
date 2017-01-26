@@ -4,7 +4,7 @@
     <h1>Students#index</h1>
     <p>Here is the list of our students</p>
     <% @students.each do |student|  %>
-      <h2><%= link_to student.name, students_show_path(student.id) %></h2>
+      <h2><%= link_to student.name, students_show_path(student) %></h2>
       <%= image_tag(student.avatar, alt: student.name, size: 80)  %>
        <hr>
     <% end %>
