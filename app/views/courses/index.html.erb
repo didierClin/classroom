@@ -1,0 +1,7 @@
+<h1>Courses#index</h1>
+<% @courses.each do |course| %>
+  <p>
+    <%=  %>
+    <%= link_to course.field, course_path(course) %>
+  </p>
+<% end %>
