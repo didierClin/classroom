@@ -9,6 +9,25 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="header">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Our Ruby promotion</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><%= link_to 'Back to courses', courses_path, class: "btn btn-default" %></li>
+            <li><%= link_to 'Students', students_path, class: "btn btn-default" %></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      <%= yield %>
+
+    </div>
   </body>
 </html>
