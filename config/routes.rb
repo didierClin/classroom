@@ -1,3 +1,13 @@
+# == Route Map
+#
+#   Prefix Verb URI Pattern               Controller#Action
+#     root GET  /                         courses#index
+#  courses GET  /courses(.:format)        courses#index
+#   course GET  /courses/:id(.:format)    courses#show
+# students GET  /students/index(.:format) students#index
+#  student GET  /student/:id(.:format)    students#show
+#
+
 Rails.application.routes.draw do
 
   root to: 'courses#index'
