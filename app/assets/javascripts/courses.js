@@ -2,4 +2,4 @@
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
-alert("Hello You're welcome to courses view page")
+// alert("Hello You're welcome to courses view page");
