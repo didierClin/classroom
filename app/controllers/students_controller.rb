@@ -22,7 +22,7 @@ class StudentsController < ApplicationController
     begin
       @student = Student.find(params[:id])
     rescue
-      redirect_to students_path, notice: "The student you're looking for is not on ours lists."
+      redirect_to students_path, alert: "The student #{params[:id]} is not present."
     end
   end
 end
