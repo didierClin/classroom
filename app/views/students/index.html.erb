@@ -3,12 +3,21 @@
     <p>Here is the list of our students</p>
     <div class="row">
 
-      <% @students.each do |student|  %>
-        <h2><%= link_to student.name, student_path(student) %></h2>
-        <%= image_tag(student.avatar, alt: student.name, size: 50)  %>
-         <hr>
+      <% @students.in_groups_of(3, false).each do |group|  %>
+        <div class="row">
+          <% group.each do |student| %>
+            <div class="col-sm-6 col-md-4">
+              <h2><%= link_to student.name, student_path(student) %></h2>
+              <%= image_tag(student.avatar, alt: student.name, size: 50)  %>
+            </div>
+          <% end %>
+        </div>
       <% end %>
 
     </div>
   </div>
   <p> il est actuellement <%= @time %> </p>
+
+
+
+  
