@@ -1,32 +1,5 @@
 <h1>Edit for <%= @student.name %>  </h1>
 
-<%= form_for(@student) do |f| %>
-  <% if @student.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@student.errors.count, "error") %> ont empéché l'enregistrement de cette note de frais:</h2>
-
-      <ul>
-      <% @student.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :'Name' %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :'Avatar' %><br>
-    <%= f.text_field :avatar %>
-  </div>
-  <div class="field">
-    <%= f.label :'Course' %><br>
-    <%= f.text_field :course_id %>
-  </div>
-
-  <%= f.submit "Update", class: "btn btn-warning" %>
-<% end %>
+<%= render 'form' %>
 
 <%= link_to 'Back', student_path(@student) %>

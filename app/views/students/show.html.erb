@@ -1,4 +1,4 @@
-<h1>Profile for @student.name</h1>
+<h1>Profile for <%= @student.name %> </h1>
 <p> <%= image_tag(@student.avatar, alt: @student.name, size: 120)  %></p>
 
 <%= link_to 'Edit', edit_student_path, class: "btn btn-info" %>

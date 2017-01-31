@@ -1,36 +1,5 @@
 <h1>Page new student</h1>
 
-<%= form_for(@student) do |f| %>
-  <% if @student.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+<%= render 'form' %>
 
-      <ul>
-      <% @student.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= f.label :avatar %>
-    <%= f.text_area :avatar %>
-  </div>
-
-  <div class="field">
-    <%= f.label :course_id %>
-    <%= f.text_area :course_id %>
-  </div>
-
-  <div class="actions">
-    <%= f.label :Create %>
-    <%= f.submit %>
-  </div>
-
-<% end %>
+<%= link_to 'Back', student_path(@student) %>
