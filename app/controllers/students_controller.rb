@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-  before_action :set_student, only: [:show, :edit]
+  before_action :set_student, only: [:show, :edit, :update]
 
   def index
     @students= Student.all
@@ -23,6 +23,14 @@ class StudentsController < ApplicationController
       redirect_to @student
     else
       render 'new'
+    end
+  end
+
+  def update
+    if @student.update(student_params)
+      redirect_to @student
+    else
+      render 'edit'
     end
   end
 
