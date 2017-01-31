@@ -6,7 +6,11 @@ class StudentsController < ApplicationController
   end
 
   def show
-    @student = Student.find(params[:id])
+    begin
+      @student = Student.find(params[:id])
+    rescue
+      redirect_to students_path, notice: "The student you're looking for is not on ours lists."
+    end
   end
 
   def new
