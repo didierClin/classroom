@@ -5,7 +5,8 @@
 
     <% @courses.each do |course| %>
     <p>
-      <%= link_to course.field, course_path(course) %>
+      <%= course.field %>
+      <%= button_to 'show', course_path(course) %>
     </p>
     <% end %>
 
@@ -13,6 +14,8 @@
 
   <div class="col-md-4">
       <h2>Student registered</h2>
+
+      <p>Nested forms here ?</p>
   </div>
 
 </div>
