@@ -11,7 +11,7 @@
 Rails.application.routes.draw do
 
   root to: 'courses#index'
-  resources :courses, only: [:index, :show]
+  resources :courses, only: [:index, :show, :new, :create, :update]
   # get 'courses/index'
   #
   # get 'courses/show/:id', to: 'courses#show'
