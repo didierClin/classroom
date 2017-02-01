@@ -2,7 +2,12 @@ class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update]
 
   def index
-    @students= Student.all
+    if params[:search]
+      @students = Student.search(params[:search]).order(name: :ASC)
+    else
+      # @students = Student.all.order("created_at DESC")
+      @students= Student.all.order(name: :ASC)
+    end
     @time = DateTime.now.strftime("%T")
   end
 
