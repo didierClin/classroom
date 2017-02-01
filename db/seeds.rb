@@ -8,14 +8,14 @@
 
 Course.destroy_all
 Course.create! [
-  {field: "Ruby 1", teacher:""},
-  {field: "Ruby 2", teacher:""},
-  {field: "Ruby 3", teacher:""},
-  {field: "Ruby 4", teacher:""},
-  {field: "Ruby 5", teacher:""},
-  {field: "Ruby 6", teacher:""},
-  {field: "Ruby 7", teacher:""},
-  {field: "Ruby 8", teacher:""}
+  {field: "Ruby 1", teacher:"Pierre"},
+  {field: "Ruby 2", teacher:"Paul"},
+  {field: "Ruby 3", teacher:"Jacques"},
+  {field: "Ruby 4", teacher:"Marie"},
+  {field: "Ruby 5", teacher:"Noemie"},
+  {field: "Ruby 6", teacher:"Alexandre"},
+  {field: "Ruby 7", teacher:"Mats"},
+  {field: "Ruby 8", teacher:"DHH"}
 ]
 Student.destroy_all
 Student.create! [
