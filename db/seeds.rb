@@ -6,17 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# Course.destroy_all
-# Course.create! [
-#   {field: "Ruby 1", teacher:""},
-#   {field: "Ruby 2", teacher:""},
-#   {field: "Ruby 3", teacher:""},
-#   {field: "Ruby 4", teacher:""},
-#   {field: "Ruby 5", teacher:""},
-#   {field: "Ruby 6", teacher:""},
-#   {field: "Ruby 7", teacher:""},
-#   {field: "Ruby 8", teacher:""}
-# ]
+Course.destroy_all
+Course.create! [
+  {field: "Ruby 1", teacher:""},
+  {field: "Ruby 2", teacher:""},
+  {field: "Ruby 3", teacher:""},
+  {field: "Ruby 4", teacher:""},
+  {field: "Ruby 5", teacher:""},
+  {field: "Ruby 6", teacher:""},
+  {field: "Ruby 7", teacher:""},
+  {field: "Ruby 8", teacher:""}
+]
 Student.destroy_all
 Student.create! [
     {name: "Ammara", course_id: 3},
