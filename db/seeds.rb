@@ -19,9 +19,9 @@ Course.create! [
 ]
 Student.destroy_all
 Student.create! [
-    {name: "Ammara", course_id: 3},
-    {name: "Arouna", course_id: 4},
-    {name: "Ernst", course_id: 5},
-    {name: "John", course_id: 6},
-    {name: "Maxime", course_id: 7}
+    {name: "Ammara", course_id: 3, avatar: "developper.png"},
+    {name: "Arouna", course_id: 4, avatar: "developper.png"},
+    {name: "Ernst", course_id: 5, avatar: "developper.png"},
+    {name: "John", course_id: 6, avatar: "developper.png"},
+    {name: "Maxime", course_id: 7, avatar: "developper.png"}
 ]
